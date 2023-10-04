@@ -229,16 +229,16 @@ h1 {
 
 .main-description ul {
   display: flex; 
-  justify-content: space-between; 
-  width: 1170px;
-
+  justify-content: center;
 }
 
-.main-description li {
-  margin: 0 15px; 
-  min-width: 25%;
+.description-list {
+  width: 270px;
 }
 
+.description-list:not(:last-child) {
+  margin-right: 30px;
+}
 
 .h4-roboto {
   margin-bottom: 10px;
@@ -261,9 +261,6 @@ h1 {
   margin-bottom: 30px;
 }
  
-.description-list {
-  max-width: 270px;
-}
 
 /* Services section styling */
 .services-section {
@@ -303,8 +300,6 @@ h1 {
 
 .staff {
   display: flex; 
-  justify-content: space-between; 
-  width: 1170px;
 }
 
 
@@ -316,7 +311,7 @@ h1 {
 
 
 .staff>ul>li {
-  width: 270px;
+  max-width: 270px;
   margin: 0 15px; 
   text-align: center;
   background-color: #FFFFFF; 
@@ -384,10 +379,6 @@ h1 {
   fill:#afb1b8;
 }
 
-.staff-link-social {
-  
-}
-
 .staff-social-media li:not(:last-child) {
   margin-right: 10px;
 }
@@ -407,6 +398,7 @@ h1 {
   padding: 16px 32px;
   border: 1px solid rgba(175, 177, 184, 1);
   fill:#afb1b8;
+  max-width: 170px;
 }
 
 .customers-section li:not(:last-child) {
@@ -414,12 +406,10 @@ h1 {
 }
 
 .customers-section li:hover {
+  fill: var(--active-link);
   border-color: var(--active-link);
 }
 
-.regular-customer-icon:hover {
-  fill: var(--active-link);
-}
 
 
 /* Footer styling */
